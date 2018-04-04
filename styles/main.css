@@ -1,0 +1,144 @@
+/*********************************************************
+* Description: Primary style sheet for Halloween Store
+
+* Author: Jeff Scollick
+*********************************************************/
+
+/*Adjusts the styling for the whole document and adds a 
+repearing background*/
+
+html {
+	background-image: url(../images/bats.gif);
+	background-repeat: repeat;
+}
+
+/* adding styles to the header */
+header{
+	height: 80px;
+	padding: .75em .5em .5em .5em;
+	margin: 0;
+	background-image: -webkit-linear-gradient(
+		45deg, white 0%, orange 75%, black 100%);
+	border-bottom-style: solid;
+	border-bottom-width:5px;
+	font-size: 125%;
+}
+
+/* adjusts the header image*/
+header img{
+	float: left;
+	margin-right: 1em;
+	margin-left: .5em;
+}
+
+/* adjusts the styles for the headers headings */
+header h2{
+	font-size:225%;
+	text-indent: 10px;
+	margin:0;
+	padding:0;
+}
+
+header h3{
+	font-size: 115%;
+	text-indent: 10px;
+	margin:0;
+	padding:0;
+
+}
+
+
+/* styling the body */
+body {
+	font-family: sans-serif;
+	width: 800px;
+	margin: 0 auto;
+	border: 4px solid black;
+	background: white;
+	box-shadow: 1px 1px 4px 6px;
+	border-radius: .3em .3em .4em .5em;
+}
+/* adding padding and changing the font size for main */
+main {
+	padding: .5em 1.5em .5em 0;
+	font-size: 110%;
+}
+
+/* adding styling and formatting the side bar */
+aside{
+	float:left;
+	width:160;
+	padding-top: .5em;
+	margin:0;
+
+}
+
+/* adjusts the styles for the unordered list */
+/* this adjusts the spacing */
+li{ 
+	font-size: 110%;
+	line-height:1.5em;
+}
+
+/* this changes the colour of the links to either orange
+when normal or visited and green when the mouse hovers over it*/
+ul a:link, a:visited{
+	color: orange;
+}
+
+ul a:hover, a:active{
+	color: green;
+}
+
+/* adding styling for the section div */
+section{
+	float:right;
+	width:575px;
+	margin:0;
+	padding-bottom: .25em;
+	padding-right: .5em;
+}
+
+h1{
+	font-size: 150%;
+}
+
+/* Selects the first letter in h1 and makes it larger */
+h1::first-letter {
+	font-size:200%;
+}
+
+/* adjusts the fonts for the other headers */
+h2{
+	font-size: 125%;
+}
+h3{
+	font-size: 110%;
+	margin:0;
+	padding-top: 1em;
+}
+
+/* adding the same styling we did to the UL to the 
+cat link */
+#CatLink {
+	padding-top: .5em;
+	font-size: 110%;
+}
+#CatLink a:hover, a:active{
+	color: green;
+}
+#CatLink a:link, a:visited{
+	color: orange;
+}
+
+/* adjusts footer style to make the font smaller and centre the text*/
+footer{
+	border-top-style:solid;
+	border-top-width: 5px;
+	font-size: 100%;
+	text-align: center;
+	background-image: -webkit-linear-gradient(
+		45deg, black 0%, orange 25%, white 100%);
+	padding: 1.25em;
+	clear:both;
+}
